@@ -8,7 +8,7 @@ STATE, ZIP, HIRE_DATE, SALARY, STATUS, TITLE, RATING, SIM_DEPT_DEPT_ID
 FROM SIM_PERSON
 WHERE TYPE = 'Project Employee' ;
 
-create or replace TRIGGER proj_emp_trigger
+create or replace TRIGGER project_emp_trigger
      INSTEAD OF insert ON sim_project_emp
      FOR EACH ROW
 BEGIN
@@ -42,7 +42,7 @@ BEGIN
 		:new.SALARY,
 		:new.STATUS,
 		:new.TITLE,
-		:new.RATING
+		:new.RATING,
 		:new.SIM_DEPT_DEPT_ID) ;
 END;
 /
