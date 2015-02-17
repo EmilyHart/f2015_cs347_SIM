@@ -75,7 +75,7 @@ BEGIN
 		SIM_DEPT_DEPT_ID)
      VALUES (
         :new.PERSON_ID,
-        'Employee',
+        'Manager',
         :new.NAME,
 		:new.GENDER,
         :new.BIRTH_DATE,
